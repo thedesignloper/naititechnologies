@@ -35,7 +35,7 @@ h6 {
   position: fixed;
   display: none;
   right: 0.9375rem;
-  bottom: 0.9375rem;
+  bottom: 65px;
   z-index: 99999;
 }
 
@@ -56,6 +56,29 @@ h6 {
   background: #fc7c1f;
   color: #fff;
 }
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.125rem;
+  background: #3eab4d;
+  color: #fff;
+  transition: all 0.4s;
+  position: fixed;
+  right: 0.9375rem;
+  bottom: 20px;
+  z-index: 99999;
+}
+
+a.whatsapp:hover {
+  color: #3eab4d;
+  background: white;
+}
+
 
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
@@ -1810,6 +1833,12 @@ span.bg-green {
 
 /* line bar e  */
 
+section#portfolio,
+section#faq,
+section#about {
+  background: #80808014;
+}
+
 /* //////Custom css end here///////// */
 /* //////Responsive css start here///////// */
 @media only screen and (max-width:767px) {
@@ -1909,11 +1938,12 @@ section {
 
 /*---------footer---------*/
 footer {
-  background-color: #222023;
+  /* background-color: #222023;
   background-image: -webkit-linear-gradient(top, #222023, #1e2c47);
   background-image: -moz-linear-gradient(top, #222023, #1e2c47);
   background-image: -o-linear-gradient(top, #222023, #1e2c47);
-  background-image: linear-gradient(to bottom, #222023, #1e2c47);
+  background-image: linear-gradient(to bottom, #222023, #1e2c47); */
+  background: url(./assets/img/dotted-map.webp), linear-gradient(to bottom, #222023e8, #1e2c47);
   color: #fff;
   padding: 80px 0 10px;
   font-size: 17px;
