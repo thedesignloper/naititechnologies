@@ -1582,7 +1582,7 @@ section {
 /*  Portfolio img*/
 .portfolio-img-container {
   width:50vw ;
-  height:90vh ;
+  height:80vh ;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0px 12px 6px #00000038;
@@ -1654,7 +1654,7 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 2rem;
-  height : 20rem;
+  height : 22rem;
   background: #fff;
   box-shadow: 0rem 0.125rem 0.9375rem rgba(0, 0, 0, 0.1);
  
@@ -1767,6 +1767,11 @@ section {
 #footer .credits {
   font-size: 0.8125rem;
 }
+
+.footer-overflow{
+  overflow: hidden;
+}
+
 .portfolio-tech{
   padding-top: 10px;
 }
@@ -1777,6 +1782,7 @@ section {
   margin-top:4px;
   border: 1px solid #000;
   border-radius: 3px;
+  display: inline-flex;
 
 
 }
