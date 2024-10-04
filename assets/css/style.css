@@ -1581,21 +1581,29 @@ section {
 
 /*  Portfolio img*/
 .portfolio-img-container {
+  width:50vw ;
+  height:90vh ;
   overflow: hidden;
-  height: 90vh;
+  position: relative;
   box-shadow: 0 0px 12px 6px #00000038;
 
 }
 
 .portfolio-img-container:hover img {
-  transform: translateY(-60%);
+  transform: translateY(-75%); 
 
 }
 
 .portfolio-img-container img {
-  width: 80vw;
+  /* width: 80vw;
   transition: transform 10s ease-in-out;
-  display: block;
+  display: block; */
+  width: 100%;
+  height: auto;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  transition: transform 10s ease;
 
 }
 
@@ -1609,6 +1617,7 @@ section {
 
 .portfolio-details .portfolio-details-container {
   position: relative;
+  
 }
 
 .portfolio-details .portfolio-details-carousel {
@@ -1635,18 +1644,25 @@ section {
   background-color: #ef6603 !important;
 }
 
+
+.portfolio-details .portfolio-main{
+  display:flex;
+  gap:4rem;
+
+}
+
+
 .portfolio-details .portfolio-info {
-  padding: 1.875rem;
-  position: absolute;
-  right: 0;
-  bottom: -4.375rem;
+  padding: 2rem;
+  height : 20rem;
   background: #fff;
   box-shadow: 0rem 0.125rem 0.9375rem rgba(0, 0, 0, 0.1);
-  z-index: 2;
+ 
 }
 
 .portfolio-details .portfolio-info h3 {
   font-size: 1.375rem;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1664,11 +1680,12 @@ section {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 3.125rem;
+  padding-top: 0;
 }
 
 .portfolio-details .portfolio-description h2 {
-  width: 50%;
+  /* width: 50%; */
+  padding-top: 2rem;
   font-size: 1.625rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -1677,6 +1694,8 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0 0 0 0;
 }
+
+
 
 @media (max-width: 768px) {
   .portfolio-details .portfolio-info {
@@ -1748,7 +1767,19 @@ section {
 #footer .credits {
   font-size: 0.8125rem;
 }
+.portfolio-tech{
+  padding-top: 10px;
+}
 
+.portfolio-tech span{
+  padding: 3px 5px;
+  margin-right: 5px;
+  margin-top:4px;
+  border: 1px solid #000;
+  border-radius: 3px;
+
+
+}
 
 .portfolio-contact-btn {
   padding: 0.8rem 2rem;
@@ -1756,7 +1787,7 @@ section {
   background-color: #ef6603;
   text-align: center;
   width: 9rem;
-  margin: 2rem 2rem 0rem;
+  margin: 1.5rem auto;
 
 
 }
@@ -2086,7 +2117,6 @@ footer hr {
 
 .social-icon-wrapper {
   text-decoration: none;
-
   background: #fff;
   padding: 6px;
   height: 35px;
